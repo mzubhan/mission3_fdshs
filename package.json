@@ -1,0 +1,23 @@
+{
+  "name": "mission3_fdshs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzubhan/mission3_fdshs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzubhan/mission3_fdshs/issues"
+  },
+  "homepage": "https://github.com/mzubhan/mission3_fdshs#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
