@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="w-screen h-screen flex bg-[url('../images/bg-login.jpeg')] bg-cover justify-center items-center">
+    <section class=" w-[529px] h-[663px] selection: border border-black border-solid bg-[rgba(24,26,28,0.84)] flex justify-between items-center flex-col">
+            <img src="/images/Logo.png" class=" w-[163px] h-[44px] mt-10 ">
+            <div class="title-container w-auto">
+                <h3 class="font-bold text-[32px] leading-[35.2px] text-center text-white mt-37 mb-2.5">Masuk</h3>
+                <p class="text-white font-normal text-[16px] text-center tracking-[0.2px] leading-[22.4px]">Selamat datang kembali!</p>
+            </div>
+            <div class="username-container flex flex-col">
+                <label for="username" class="text-white font-medium text-[18px] leading-[25.2px] tracking-[0.2] text-left mb-1.5">Username</label>
+                <input class="w-[449px] h-[50px] rounded-[24px] border-[rgba(193,194,196,1)] border-[1px] border-[solid] text-[16px]" type="text" placeholder="Masukkan username" name="username" required>
+            </div>
+            <div class="password-container flex flex-col">
+                <label for="password" class="text-white font-medium text-[18px] leading-[25.2px] tracking-[0.2] mb-1.5">Kata sandi</label>
+                <input class="w-[449px] h-[50px] rounded-[24px] border-[rgba(193,194,196,1)] border-[1px] border-[solid] text-[16px]"  type="text" placeholder="Masukkan kata sandi" name="password" required>
+                <div class="flex justify-between">
+                    <p class="font-normal text-[16px] text-[rgba(193,194,196,1)] mt-3">Belum punya akun? <a class="text-white" href="../signup/signup.html">Daftar</a></p>
+                    <a class="font-normal text-[16px] text-white">Lupa kata sandi?</a>
+                </div>
+            </div>
+            <div class="button-container w-[449px] mb-10">
+                <button class="text-white bg-[rgba(61,65,66,1)] w-full h-[50px] rounded-[24px] border-[rgba(231,227,252,0.23)] border-[1px] border-[solid] text-[16px] font-semibold" type="submit">Masuk</button>
+                <p class="font-normal text-[16px] text-[rgba(193,194,196,1)] text-center mt-2 mb-2">Atau</p>
+                <button class="text-white bg-[rgba(61,65,66,1)] w-full h-[50px] rounded-[24px] flex justify-center items-center border-[rgba(231,227,252,0.23)] border-[1px] border-[solid] text-[16px] font-semibold" type="submit">
+                    <img src="/images/google-logo.png">
+                    <p>Masuk dengan google</p>
+                </button>
+            </div>
+    </section>
+</body>
+</html>
