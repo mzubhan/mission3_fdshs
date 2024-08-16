@@ -1,9 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./*/*.html', ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'lato' : ['Lato', 'Georgia'],
+        'londrina' : ['"Londrina Solid"', 'Georgia'],
+      }
+    },
   },
-  plugins: [],
+  plugins: []
 }
-
