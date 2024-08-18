@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">  
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>signup</title>
 </head>
-<body>
-    <section>
-        <div class="card">
-            <div class="logo">
-                <img src="./images/Logo.png">
+<body class="w-screen h-screen flex bg-[url('../images/signup-bg.jpeg')] bg-cover justify-center items-center">
+    <section class=" w-[529px] h-[778px] selection: border border-black border-solid bg-[rgba(24,26,28,0.84)] flex justify-between items-center flex-col rounded-[16px]">
+            <div class=" mt-10 flex flex-row items-center">
+                <img class=" w-[42px] h-[44px] mr-2" src="../images/logo-vector.png">
+                <h1 class="text-white text-[50px] leading-[55px] m-0 font-londrina">CHILL</h1>
             </div>
-            <div class="title-container">
-                <h1 class="card-title">Daftar</h1>
-                <p>Selamat datang!</p>
-            </div>
-            <div class="username-container">
-                <label for="username">Username</label>
-                <input type="text" placeholder="Masukkan username" name="username" required>
-            </div>
-            <div class="password-container">
-                <label for="password">Kata sandi</label>
-                <input type="password" placeholder="Masukkan kata sandi" name="password" required>
-            </div>
-            <div class="repassword-container">
-                <label for="repassword">Konfirmasi kata sandi</label>
-                <input type="password" placeholder="Masukkan kata sandi" name="repassword" required>
-                <p>Sudah punya akun? <a>Masuk</a></p>
-            </div>
-            <div class="button-container">
-                <button type="submit">Daftar</button>
-                <p>Atau</p>
-                <button type="submit">
-                    <img src="./images/google-logo.png">
-                    <p>Daftar dengan google</p>
-                </button>
-            </div>
-        </div>
+                <div class="title-container w-auto font-lato">
+                    <h3 class="font-bold text-[32px] leading-[35.2px] text-center text-white mt-37 mb-2.5  ">Daftar</h3>
+                    <p class="text-white font-normal text-[16px] text-center tracking-[0.2px] leading-[22.4px]">Selamat datang!</p>
+                </div>
+                <div class="username-container flex flex-col font-lato ">
+                    <label for="username" class="text-white font-medium text-[18px] leading-[25.2px] tracking-[0.2] text-left mb-1.5 ">Username</label>
+                    <input class="w-[449px] h-[50px] rounded-[24px] border-solid text-[16px] border-2  bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-4 font-lato" type="text" placeholder="Masukkan username" name="username" required>
+                </div>
+                <div class="username-container flex flex-col font-lato ">
+                    <label for="username" class="text-white font-medium text-[18px] leading-[25.2px] tracking-[0.2] text-left mb-1.5 "> Kata Sandi</label>
+                    <input class="w-[449px] h-[50px] rounded-[24px] border-solid text-[16px] border-2  bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-4 font-lato" type="password" placeholder="Masukkan kata sandi" name="username" required>
+                </div>
+                <div class="password-container flex flex-col font-lato">
+                    <label for="password" class="text-white font-medium text-[18px] leading-[25.2px] tracking-[0.2] mb-1.5 ">Konfrimasi Kata sandi</label>
+                    <input class="w-[449px] h-[50px] rounded-[24px] border-[1px] border-[solid] text-[16px] mb-3 bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-4 font-lato"  type="password" placeholder="Masukkan kata sandi" name="password" required>
+                    <div class="flex justify-between font-lato">
+                        <p class="font-normal text-[16px] text-[rgba(193,194,196,1)]">Sudah punya akun? &nbsp<a class="text-white" href="../login/login.html">Masuk</a></p>
+                    </div>
+                </div>
+                <div class="button-container w-[449px] mb-10">
+                    <button class="font-lato text-white bg-[rgba(61,65,66,1)] w-full h-[50px] rounded-[24px] border-[rgba(231,227,252,0.23)] border-[1px] border-[solid] text-[16px] font-semibold" type="submit">Daftar</button>
+                    <p class=" font-lato font-normal text-[16px] text-[rgba(193,194,196,1)] text-center mt-2 mb-2">Atau</p>
+                    <button class="font-lato text-white w-full h-[50px] rounded-[24px] flex justify-center items-center border-[rgba(231,227,252,0.23)] border-[1px] border-solid text-[16px] font-semibold" type="submit">
+                        <img src="/images/google-logo.png">
+                        <p class="ml-5">Daftar dengan google</p>
+                    </button>
+                </div>
     </section>
 </body>
 </html>

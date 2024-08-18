@@ -616,6 +616,10 @@ video {
   height: 100vh;
 }
 
+.h-\[778px\]{
+  height: 778px;
+}
+
 .w-\[42px\]{
   width: 42px;
 }
@@ -664,20 +668,28 @@ video {
   border-radius: 24px;
 }
 
-.border{
-  border-width: 1px;
+.rounded-\[16px\]{
+  border-radius: 16px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-8{
+  border-width: 8px;
 }
 
 .border-\[1px\]{
   border-width: 1px;
 }
 
-.border-solid{
-  border-style: solid;
+.border{
+  border-width: 1px;
 }
 
-.border-\[rgba\(193\2c 194\2c 196\2c 1\)\]{
-  border-color: rgba(193,194,196,1);
+.border-solid{
+  border-style: solid;
 }
 
 .border-\[rgba\(231\2c 227\2c 252\2c 0\.23\)\]{
@@ -693,6 +705,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-yellow-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(250 204 21 / var(--tw-border-opacity));
+}
+
 .bg-\[rgba\(24\2c 26\2c 28\2c 0\.84\)\]{
   background-color: rgba(24,26,28,0.84);
 }
@@ -701,12 +718,24 @@ video {
   background-color: rgba(61,65,66,1);
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .bg-\[url\(\'\.\.\/images\/bg-login\.jpeg\'\)\]{
   background-image: url('../images/bg-login.jpeg');
 }
 
+.bg-\[url\(\'\.\.\/images\/signup-bg\.jpeg\'\)\]{
+  background-image: url('../images/signup-bg.jpeg');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-left{
