@@ -7,7 +7,7 @@
     <link href="../dist/output.css" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[rgba(24,26,28,1)]">
+<body class="bg-[rgba(24,26,28,1)] text-white font-lato">
     <header>
         <navbar class="flex justify-between items-center mr-5 ml-5 sm:ml-20
         sm:mr-20">
@@ -26,14 +26,28 @@
             sm:font-medium 
             sm:leading-[25.2px]
             sm:gap-14">
-                <ul><a class=" flex flex-row items-center gap-1 font-londrina text-[32px]"><img src="../images/logo-vector.png" alt="chill logo" class="h-[18px] w-5 sm:h-[21.47px] sm:w-[25.15px]"><span class="hidden sm:flex">CHILL<span></a></ul>
-                <ul><a>Series</a></ul>
-                <ul><a>Film</a></ul>
+                <ul><a class="flex flex-row items-center gap-1 font-londrina text-[32px]" href="#"><img src="../images/logo-vector.png" alt="chill logo" class="h-[18px] w-5 sm:h-[21.47px] sm:w-[25.15px]"><span class="hidden sm:flex">CHILL<span></a></ul>
+                <ul><a href="../login/login.html">Series</a></ul>
+                <ul><a href="../signup/signup.html">Film</a></ul>
                 <ul><a>Daftar Saya</a></ul>
             </li>
-            <div class="flex justify-end gap-2 items-center sm:ml-8">
+            <div class="relative flex justify-end gap-2 items-center sm:ml-8">
                 <img src="../images/Avatar.png" alt="avatar" class="h-5 w-5 sm:h-10 sm:w-10 rounded-[50%]">
                 <img src="../images/arrow-vector.svg" class="w-2 h-[5px] sm:w-[14px] sm:h-[8.65px]">
+                <div class="absolute sm:hidden top-9 flex flex-col justify-around h-[113px] w-[104px] bg-[#181A1C] border-[0.2px] border-gray-400 rounded-[4px]">
+                    <div class="flex gap-[5px] ml-4">
+                        <img src="../images/v-profile.svg" class="h-[16px] w-[16px]">
+                        <p class="font-semibold text-[10px] leading-[14px] tracking-[0.2px] text-[#3254FF]">Profile Saya</p>
+                    </div>
+                    <div class="flex items-center gap-[5px] ml-4">
+                        <img src="../images/v-star.svg" class="h-[16px] w-[16px]">
+                        <p class="font-semibold text-[10px] leading-[14px] tracking-[0.2px] text-white">Ubah Premium</p>
+                    </div>
+                    <div class="flex gap-[5px] ml-4">
+                        <img src="../images/v-out.svg" class="h-[16px] w-[16px]">
+                        <p class="font-semibold text-[10px] leading-[14px] tracking-[0.2px] text-white">Keluar</p>
+                    </div>
+                </div>
             </div>
         </navbar>
         <div class="h-[225px] [w-full] bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0)16.89%,rgba(16,18,19,0.86)59.37%),url('../images/bg-main.png')] bg-cover bg-no-repeat bg-center flex items-end
@@ -47,14 +61,185 @@
                     <div class="text-xs font-medium leading-[16.8px] tracking-[0.2px] flex gap-2 sm:gap-[10px] sm:text-lg sm:leading-[25.2px] sm:tracking-[0.2px]">
                         <button class="bg-[rgba(15,30,147,1)] h-[25px] w-[55px] rounded-full sm:h-[42px] sm:w-[93px]">Mulai</button>
                         <button class="h-[25px] w-[120px] sm:h-[44px] sm:w-[185px] bg-[#22282A] rounded-full"><img><span>Selengkapnya</span></button>
-                        <img src="../images/Frame 64.svg" class="h-[25px] sm:h-[45px] sm:w-[52px]">
+                        <p class=" sm:h-[45px] sm:w-[52px] h-[25px] w-[30px] text-[12px] font-bold rounded-full sm:text-[18px] text-[#C1C2C4] flex  justify-center items-center border">18+</p>
                     </div>
                     <img src="../images/Frame 65.svg" class="h-6 w-6 sm:h-11 sm:w-11">
                 </div>
             </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <!-- Lanjut Tonton Film -->
+        <section class="relative flex flex-col gap-5 sm:gap-8 ml-5 mt-10 mb-10 sm:ml-20 sm:mt-10 sm:mb-10 left-0-0">
+            <h2 class="text-xl font-bold leading-6 sm:text-[32px] leading-[35.2px] ">Melanjutkan Tonton Film</h2>
+            <div class="flex gap-4 sm:gap-6  w-full overflow-scroll ">
+                    <img class="absolute -left-6 z-10 top-1/2 p-[14px] bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kiri.svg">
+                    <img class="absolute z-10 p-[14px] right-0 top-1/2 bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kanan.svg">
+                <div class="relative min-w-[309px] h-[151px] sm:min-w-[302px] sm:h-[162px] rounded-[4.32px] sm:rounded-[8px] bg-[linear-gradient(180deg,rgba(0,0,0,0)37.04%,rgba(0,0,0,0.5)100%),url('../images/mv-tog.png')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute hidden sm:flex items-center justify-center top-2 sm:top-4 sm:left-4 left-2 bg-[#0F1E93] sm:h-[28px] sm:w-[104px] h-[14px] w-[44px] sm:text-[14px] text-[5.7px] text-center rounded-full font-bold">Episode Baru</p>
+                    <div class="flex flex-row justify-between h-[52px] items-center  ml-4 mr-4">
+                        <h2 class="text-[14px] tracking-[0.2px] leading-[19px] sm:text-[18px] sm:leading-[21px] font-bold">Tower of God</h2>
+                        <div class="flex gap-1 items-center">
+                            <img src="../images/star.svg" class="h-3 w-3 sm:h-4 sm:w-4">
+                            <p class="text-[12px] tracking-[0.2px] leading-[19px]">4,5/5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[309px] h-[151px] sm:min-w-[302px] sm:h-[162px] rounded-[4.32px] sm:rounded-[8px] bg-[linear-gradient(180deg,rgba(0,0,0,0)37.04%,rgba(0,0,0,0.5)100%),url('../images/mv-alien.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <div class="flex flex-row justify-between h-[52px] items-center  ml-4 mr-4">
+                        <h2 class="text-[14px] tracking-[0.2px] leading-[19px] sm:text-[18px] sm:leading-[21px] font-bold">Alien: Romulus</h2>
+                        <div class="flex gap-1 items-center">
+                            <img src="../images/star.svg" class="h-3 w-3 sm:h-4 sm:w-4">
+                            <p class="text-[12px] tracking-[0.2px] leading-[19px]">4/5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[309px] h-[151px] sm:min-w-[302px] sm:h-[162px] rounded-[4.32px] sm:rounded-[8px] bg-[linear-gradient(180deg,rgba(0,0,0,0)37.04%,rgba(0,0,0,0.5)100%),url('../images/mv-amancalled.png')] bg-cover bg-center flex flex-col justify-end">
+                    <div class="flex flex-row justify-between h-[52px] items-center  ml-4 mr-4">
+                        <h2 class="text-[14px] tracking-[0.2px] leading-[19px] sm:text-[18px] sm:leading-[21px] font-bold">A Man Called Otto</h2>
+                        <div class="flex gap-1 items-center">
+                            <img src="../images/star.svg" class="h-3 w-3 sm:h-4 sm:w-4">
+                            <p class="text-[12px] tracking-[0.2px] leading-[19px]">4,2/5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[309px] h-[151px] sm:min-w-[302px] sm:h-[162px] rounded-[4.32px] sm:rounded-[8px] bg-[linear-gradient(180deg,rgba(0,0,0,0)37.04%,rgba(0,0,0,0.5)100%),url('../images/mv-bluelock.png')] bg-cover bg-center flex flex-col justify-end">
+                    <div class="flex flex-row justify-between h-[52px] items-center  ml-4 mr-4">
+                        <h2 class="text-[14px] tracking-[0.2px] leading-[19px] sm:text-[18px] sm:leading-[21px] font-bold">Bluelock</h2>
+                        <div class="flex gap-1 items-center">
+                            <img src="../images/star.svg" class="h-3 w-3 sm:h-4 sm:w-4">
+                            <p class="text-[12px] tracking-[0.2px] leading-[19px]">4,3/5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[309px] h-[151px] sm:min-w-[302px] sm:h-[162px] rounded-[4.32px] sm:rounded-[8px] bg-[linear-gradient(180deg,rgba(0,0,0,0)37.04%,rgba(0,0,0,0.5)100%),url('../images/mv-dontlookupp.png')] bg-cover bg-center flex flex-col justify-end">
+                    <div class="flex flex-row justify-between h-[52px] items-center  ml-4 mr-4">
+                        <h2 class="text-[14px] tracking-[0.2px] leading-[19px] sm:text-[18px] sm:leading-[21px] font-bold">Don't Look Up</h2>
+                        <div class="flex gap-1 items-center">
+                            <img src="../images/star.svg" class="h-3 w-3 sm:h-4 sm:w-4">
+                            <p class="text-[12px] tracking-[0.2px] leading-[19px]">4/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top Rating FIlm dan Series -->
+        <section class="relative flex flex-col gap-5 sm:gap-8 ml-5 mt-10 mb-10 sm:ml-20 sm:mt-10 sm:mb-10">
+            <h2 class="text-xl font-bold leading-6 sm:text-[32px] leading-[35.2px] ">Top Rating Film dan Series Hari ini</h2>
+            <div class="flex gap-4 sm:gap-6  w-full overflow-scroll ">
+                    <img class="absolute -left-6 z-10 top-1/2 p-[14px] bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kiri.svg">
+                    <img class="absolute z-10 p-[14px] right-0 top-1/2 bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kanan.svg">
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/1.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute flex items-center justify-center top-2 sm:top-4 sm:left-4 left-2 bg-[#0F1E93] sm:h-[28px] sm:w-[104px] h-[14px] w-[44px] sm:text-[14px] text-[5.7px] text-center rounded-full font-bold">Episode Baru</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/2.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute flex items-center justify-center top-2 sm:top-4 sm:left-4 left-2 bg-[#0F1E93] sm:h-[28px] sm:w-[104px] h-[14px] w-[44px] sm:text-[14px] text-[5.7px] text-center rounded-full font-bold">Episode Baru</p>
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/3.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/4.jpg')] bg-cover bg-center flex flex-col justify-end">                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/5.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/6.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+            </div>
+        </section>
+        <!-- Film Trending -->
+        <section class="relative flex flex-col gap-5 sm:gap-8 ml-5 mt-10 mb-10 sm:ml-20 sm:mt-10 sm:mb-10">
+            <h2 class="text-xl font-bold leading-6 sm:text-[32px] leading-[35.2px] ">Film Trending</h2>
+            <div class="flex gap-4 sm:gap-6  w-full overflow-scroll ">
+                    <img class="absolute -left-6 z-10 top-1/2 p-[14px] bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kiri.svg">
+                    <img class="absolute z-10 p-[14px] right-0 top-1/2 bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kanan.svg">
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/7.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/21.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/9.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/10.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute flex items-center justify-center top-2 sm:top-4 sm:left-4 left-2 bg-[#0F1E93] sm:h-[28px] sm:w-[104px] h-[14px] w-[44px] sm:text-[14px] text-[5.7px] text-center rounded-full font-bold">Episode Baru</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/16.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/12.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+            </div>
+        </section>
+        <!-- Rilis Baru -->
+        <section class="relative flex flex-col gap-5 sm:gap-8 ml-5 mt-10 mb-10 sm:ml-20 sm:mt-10 sm:mb-10">
+            <h2 class="text-xl font-bold leading-6 sm:text-[32px] leading-[35.2px] ">Rilis Baru</h2>
+            <div class="flex gap-4 sm:gap-6  w-full overflow-scroll ">
+                    <img class="absolute -left-6 z-10 top-1/2 p-[14px] bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kiri.svg">
+                    <img class="absolute z-10 p-[14px] right-0 top-1/2 bg-[#2F3334] rounded-full border border-[rgba(231,227,252,0.23)] sm:inline hidden" src="../images/kanan.svg">
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/13.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute top-0 sm:right-3 right-1 bg-[#B71F1D] sm:h-[48px] sm:w-[31px] h-[21.84px] w-[14.84px] sm:text-[14px] text-[6.7px] text-center rounded-[0px_4px_0px_4px]">Top 10</p>
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/21.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/15.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+                <div class="relative min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/naru.jpg')] bg-cover bg-center flex flex-col justify-end">
+                    <p class="absolute flex items-center justify-center top-2 sm:top-4 sm:left-4 left-2 bg-[#0F1E93] sm:h-[28px] sm:w-[104px] h-[14px] w-[44px] sm:text-[14px] text-[5.7px] text-center rounded-full font-bold">Episode Baru</p>
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/20.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+                <div class="min-w-[95px] h-[145px] sm:min-w-[234px] sm:h-[365px] rounded-[4.32px] sm:rounded-[8px] bg-[url('../images/18.jpg')] bg-cover bg-center flex flex-col justify-end">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5 mr-5 ml-5 mb-5 sm:mt-[60px] sm:mr-20 sm:ml-20 sm:mb-[60px]">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-10 justify-between">
+            <div class="flex flex-col gap-4 sm:mr-10">
+                <div>
+                    <a class=" flex flex-row items-center gap-1 font-londrina text-[24px] sm:text-[50px]"><img src="../images/logo-vector.png" alt="chill logo" class="h-[25px] w-7 sm:h-[35.34px] sm:w-[42.56px]"><span class="sm:flex">CHILL<span></a>
+                </div>
+                <p class="text-[#C1C2C4] text-[12px] ">&copy; 2023 Chill All Rights Reserved.</p>
+            </div>
+            <div class="flex flex-col justify-between sm:flex-row gap-2 text-base font-medium leading-[22.4px] tracking-[0.2px] sm:w-[814px]">
+                <div class="flex flex-col gap-[15px]">
+                    <div class="flex justify-between">
+                        <p class="font-bold">Genre</p>
+                        <img src="../images/arrow-right.svg" class="h-3 w-[7.41px] sm:hidden">
+                    </div>
+                    <div class="hidden sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-y-[13px] gap-x-7 text-[#C1C2C4] tracking-[0.2px] leading-[22.4px] sm:max-w-[516px]">
+                        <a>Aksi</a>
+                        <a>Anak-anak</a>
+                        <a>Anime</a>
+                        <a>Britania</a>
+                        <a>Kejahatan</a>
+                        <a>Drama</a>
+                        <a>Fantasi Ilmiah & Fantasi</a>
+                        <a>K-Drama</a>
+                        <a>Komedi</a>
+                        <a>Petualangan</a>
+                        <a>Perang</a>
+                        <a>Romantis</a>
+                        <a>Sains & Alam</a>
+                        <a>Thriller</a>
+
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[15px]">
+                    <div class="flex justify-between">
+                        <p class="font-bold">Bantuan</p>
+                        <img src="../images/arrow-right.svg" class="h-3 w-[7.41px] sm:hidden">
+                    </div>
+                    <div class="hidden sm:flex flex-col gap-[13px] text-[#C1C2C4] tracking-[0.2px] leading-[22.4px]">
+                        <a>FAQ</a>
+                        <a>Kontak Kami</a>
+                        <a>Privasi</a>
+                        <a>Syarat dan Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
